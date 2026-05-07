@@ -1,13 +1,19 @@
 # GC Ingredients Website
 
-A modern Next.js-based website for GC Ingredients.
+A modern, responsive website built using Next.js for GC Ingredients.
 
 ## 🚀 Tech Stack
 - Next.js
 - TypeScript
 - Tailwind CSS
 
-## 📦 Setup
+## 📂 Project Structure
+app/
+ ├── src/
+ ├── components/
+ ├── layout/
+ 
+ ## ⚙️ Setup
 
 ```bash
 npm install
