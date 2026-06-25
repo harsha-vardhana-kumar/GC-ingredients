@@ -46,7 +46,7 @@ export default function QualityControl() {
           {/* Right */}
           <motion.div className="relative" initial={{ opacity: 0, x: 48 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}>
             <div className="relative rounded-2xl overflow-hidden h-[480px]" style={{ boxShadow: "0 0 0 3px rgba(26,92,56,0.3), 0 24px 64px rgba(0,0,0,0.3)" }}>
-              <Image src="/images/2_Cross_section_of_a_perfectly.png" alt="GC Ingredients quality control laboratory" fill className="object-cover" />
+              <Image src="/images/2_Cross_section_of_a_perfectly.png" alt="GC Ingredients quality control laboratory" title="GC Ingredients quality control laboratory" fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0d3a22]/30 to-transparent" />
             </div>
             <motion.div className="absolute top-4 right-4 bg-white rounded-xl px-3 py-2.5 shadow-lg items-center gap-2 hidden sm:flex" initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.45, delay: 0.4 }}>

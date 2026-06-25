@@ -122,7 +122,7 @@ export default function FacilityGrowth() {
         >
           <Image
             src="/images/app_snacks.png"
-            alt="GC Ingredients 120,000 sq ft manufacturing facility"
+            alt="GC Ingredients 120,000 sq ft manufacturing facility" title="GC Ingredients 120,000 sq ft manufacturing facility"
             fill
             className="object-cover"
           />

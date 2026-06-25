@@ -18,7 +18,7 @@ export default function FeaturedArticle() {
             {/* Left: image */}
             <div className="relative min-h-[320px] lg:min-h-[420px] overflow-hidden">
               <motion.div className="absolute inset-0" whileHover={{ scale: 1.03 }} transition={{ duration: 0.5 }}>
-                <Image src="/images/custom_blends.png" alt="The Future of Functional Ingredients in Bakery Manufacturing" fill className="object-cover" />
+                <Image src="/images/custom_blends.png" alt="The Future of Functional Ingredients in Bakery Manufacturing" title="The Future of Functional Ingredients in Bakery Manufacturing" fill className="object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0d3a22]/10" />
               </motion.div>
             </div>

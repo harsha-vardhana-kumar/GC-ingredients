@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { Send, Lock, MapPin, Phone, Mail, HeadphonesIcon, CheckCircle } from "lucide-react";
 
 const infoCards = [
-  { icon: MapPin, title: "Visit Our Facility", detailItem: "Full address placeholder", linkText: "Get Directions", linkHref: "#", color: "#e8650a" },
-  { icon: Phone, title: "Call Our Team", detailItem: "+1 (XXX) XXX-XXXX", subText: "Mon–Fri: 8AM – 5PM CST", color: "#1a5c38" },
+  { icon: MapPin, title: "Delivery & Pickup Address", detailItem: "3450 Atlanta Industrial Pkwy NW, Atlanta, GA 30331", linkText: "Get Directions", linkHref: "https://maps.google.com/?q=3450+Atlanta+Industrial+Parkway+NW+Atlanta+GA+30331", color: "#e8650a" },
+  { icon: Phone, title: "Main Phone", detailItem: "(678) 974-0600", subText: "For Delivery & Pickup enquiries", color: "#1a5c38" },
   { icon: Mail, title: "Email Us Directly", detailItem: "info@gcingredients.com", linkText: "Send Email", linkHref: "mailto:info@gcingredients.com", color: "#e8650a" },
-  { icon: HeadphonesIcon, title: "Technical Support", detailItem: "For formulation and product questions", highlightText: "24hr response time", color: "#1a5c38" },
+  { icon: HeadphonesIcon, title: "Customer Service (Appointments)", detailItem: "(770) 695-1333  ·  custservice@gcingredients.com", highlightText: "First come, first serve · 7AM – 3PM", color: "#1a5c38" },
 ];
 
 export default function ContactFormInfo() {
@@ -165,14 +165,19 @@ export default function ContactFormInfo() {
 
                   {/* Row 4 */}
                   <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.36 }}>
-                    <label className="block text-sm font-medium text-[#111827] mb-1.5">Subject</label>
-                    <input 
-                      type="text" 
+                    <label className="block text-sm font-medium text-[#111827] mb-1.5">Area of Interest</label>
+                    <select 
                       value={formData.subject} 
                       onChange={e => handleInputChange('subject', e.target.value)}
-                      placeholder="How can we help you?"
-                      className="w-full border border-[#e5e7eb] rounded-xl px-4 py-3 text-[16px] text-[#111827] placeholder:text-[#9ca3af] focus:outline-none focus:ring-2 focus:ring-[#1a5c38] transition-all bg-white"
-                    />
+                      className="w-full border border-[#e5e7eb] rounded-xl px-4 py-3 text-[16px] text-[#111827] focus:outline-none focus:ring-2 focus:ring-[#1a5c38] bg-white transition-all"
+                    >
+                      <option value="">Select an area of interest</option>
+                      <option value="Product Inquiry">Product Inquiry</option>
+                      <option value="Technical Support">Technical Support</option>
+                      <option value="Plant Visit">Plant Visit</option>
+                      <option value="Pricing / Quote">Pricing / Quote</option>
+                      <option value="Other">Other</option>
+                    </select>
                   </motion.div>
 
                   {/* Row 5 */}

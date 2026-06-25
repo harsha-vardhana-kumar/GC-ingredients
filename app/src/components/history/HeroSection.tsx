@@ -110,7 +110,7 @@ export default function HistoryHeroSection() {
           animate="visible"
           custom={0.2}
         >
-          What began as one man&apos;s passion for food science in 1998 has grown into a
+          What began as one man&apos;s passion for food science in 2004 has grown into a
           120,000 sq ft manufacturing powerhouse serving food manufacturers across North
           America.
         </motion.p>

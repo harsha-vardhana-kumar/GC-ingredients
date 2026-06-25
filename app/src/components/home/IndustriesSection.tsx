@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import { ArrowRight, ChefHat, Utensils, Milk } from "lucide-react";
+import Image from "next/image";
+
 
 const industries = [
   {
@@ -134,10 +136,11 @@ export default function IndustriesSection() {
           </div>
 
           <div className="relative rounded-2xl overflow-hidden shadow-xl h-72 lg:h-96">
-            <img
+            <Image
               src={current.image}
-              alt={current.headline}
-              className="w-full h-full object-cover"
+              alt={current.headline} title={current.headline}
+              fill
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/20" />
           </div>

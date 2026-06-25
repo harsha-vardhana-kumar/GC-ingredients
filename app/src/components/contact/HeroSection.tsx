@@ -8,9 +8,9 @@ const fadeUp = (delay: number = 0) => ({
 });
 
 const quickContacts = [
-  { icon: Phone, text: "+1 (XXX) XXX-XXXX" },
+  { icon: Phone, text: "(678) 974-0600" },
   { icon: Mail, text: "info@gcingredients.com" },
-  { icon: Clock, text: "Mon–Fri: 8AM – 5PM CST" },
+  { icon: Clock, text: "Mon–Fri: 7AM – 3PM CST" },
 ];
 
 export default function ContactHeroSection() {
@@ -24,12 +24,15 @@ export default function ContactHeroSection() {
           Contact Us
         </motion.div>
         
-        <motion.h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-[family-name:var(--font-plus-jakarta)] text-white leading-[1.1] mb-6" variants={fadeUp(0.1)} initial="hidden" animate="visible">
-          Let&apos;s Build Something <span className="text-[#e8650a]">Great Together</span>
+        <motion.h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-[family-name:var(--font-plus-jakarta)] text-white leading-[1.1] mb-3" variants={fadeUp(0.1)} initial="hidden" animate="visible">
+          We Would Love to <span className="text-[#e8650a]">Hear From You</span>
         </motion.h1>
+        <motion.p className="text-xl text-green-300 font-semibold mb-4" variants={fadeUp(0.15)} initial="hidden" animate="visible">
+          Get in Touch
+        </motion.p>
         
         <motion.p className="text-lg text-green-200 leading-relaxed mx-auto mb-10 max-w-2xl" variants={fadeUp(0.2)} initial="hidden" animate="visible">
-          Whether you need a custom formulation, technical consultation, or just want to explore what&apos;s possible — our food science team is ready to help.
+          For Delivery and Pickup contact us at (678) 974-0600 or info@gcingredients.com. Our team is here to help you find the right ingredient solutions for your needs.
         </motion.p>
         
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6">

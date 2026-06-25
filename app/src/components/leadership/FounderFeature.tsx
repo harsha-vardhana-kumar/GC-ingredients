@@ -31,7 +31,7 @@ export default function FounderFeature() {
             >
               <Image
                 src="/images/hero-starches.png"
-                alt="Srikanth Gundavarapu, Founder & CEO of GC Ingredients"
+                alt="Srikanth, MS, MBA, Founder of GC Ingredients" title="Srikanth, MS, MBA, Founder of GC Ingredients"
                 fill
                 className="object-cover object-center"
               />
@@ -84,7 +84,7 @@ export default function FounderFeature() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.15 }}
             >
-              Srikanth Gundavarapu
+              Srikanth, MS, MBA
             </motion.h2>
 
             <motion.p
@@ -98,7 +98,7 @@ export default function FounderFeature() {
             </motion.p>
 
             {[
-              "Srikanth founded GC Ingredients in 1998 after years of hands-on R&D experience in the food ingredient industry. His deep technical knowledge and passion for customer success became the foundation on which GC Ingredients was built.",
+              "Srikanth founded GC Ingredients in 2004 after years of hands-on R&D experience in the food ingredient industry. His deep technical knowledge and passion for customer success became the foundation on which GC Ingredients was built.",
               "Under his leadership, GCI has grown from a single-person ingredient supply operation to a 120,000 sq ft manufacturing powerhouse with over 100 technical experts serving food manufacturers across North America.",
               "Srikanth continues to lead the company's R&D vision, pushing the boundaries of ingredient innovation and guiding GCI's next chapter of global growth.",
             ].map((para, i) => (

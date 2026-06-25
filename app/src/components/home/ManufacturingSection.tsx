@@ -1,4 +1,6 @@
 import { Factory, Thermometer, Microscope, Package, ArrowRight } from "lucide-react";
+import Image from "next/image";
+
 
 const capabilities = [
   { icon: Factory, label: "3 Production Facilities", desc: "Monterrey, CDMX, Guadalajara" },
@@ -19,33 +21,37 @@ export default function ManufacturingSection() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden h-48 shadow-md">
-                  <img
+                  <Image
                     src="/images/hero-lab.jpg"
-                    alt="GC Ingredients manufacturing facility"
-                    className="w-full h-full object-cover"
+                    alt="GC Ingredients manufacturing facility" title="GC Ingredients manufacturing facility"
+                    fill
+                    className="object-cover"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden h-36 shadow-md">
-                  <img
+                  <Image
                     src="/images/preservatives.jpg"
-                    alt="Quality control lab"
-                    className="w-full h-full object-cover"
+                    alt="Quality control lab" title="Quality control lab"
+                    fill
+                    className="object-cover"
                   />
                 </div>
               </div>
               <div className="mt-8 space-y-4">
                 <div className="rounded-2xl overflow-hidden h-36 shadow-md">
-                  <img
+                  <Image
                     src="/images/hydrocolloids.jpg"
-                    alt="Hydrocolloid processing"
-                    className="w-full h-full object-cover"
+                    alt="Hydrocolloid processing" title="Hydrocolloid processing"
+                    fill
+                    className="object-cover"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden h-48 shadow-md">
-                  <img
+                  <Image
                     src="/images/leavening.jpg"
-                    alt="Bakery application"
-                    className="w-full h-full object-cover"
+                    alt="Bakery application" title="Bakery application"
+                    fill
+                    className="object-cover"
                   />
                 </div>
               </div>
@@ -92,7 +98,7 @@ export default function ManufacturingSection() {
               })}
             </div>
 
-            <a href="#contact" className="btn-primary">
+            <a href="/contact" className="btn-primary">
               Request a Plant Visit <ArrowRight className="w-4 h-4" />
             </a>
           </div>

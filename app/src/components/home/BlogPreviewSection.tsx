@@ -1,4 +1,6 @@
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+import Image from "next/image";
+
 
 const posts = [
   {
@@ -39,10 +41,9 @@ export default function BlogPreviewSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
           <div>
-            <div className="section-tag mb-4">From the Lab</div>
+            <div className="section-tag mb-4">LATEST UPDATES</div>
             <h2 className="text-4xl lg:text-5xl font-bold font-[family-name:var(--font-plus-jakarta)] text-[#111827] max-w-xl">
-              Insights from our{" "}
-              <span className="text-gradient-green">food scientists</span>
+              Latest updates from <span className="text-gradient-green">GC Ingredients and Primaria Nutrition</span>
             </h2>
           </div>
           <a href="#" className="btn-secondary flex-shrink-0">
@@ -60,10 +61,11 @@ export default function BlogPreviewSection() {
             >
               {/* Image */}
               <div className="relative h-52 overflow-hidden">
-                <img
+                <Image
                   src={post.image}
-                  alt={post.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  alt={post.title} title={post.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 <span

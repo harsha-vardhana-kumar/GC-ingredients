@@ -4,24 +4,34 @@ import { Target, Eye } from "lucide-react";
 
 const cards = [
   {
+    id: "vision",
+    icon: Eye,
+    iconColor: "#e8650a",
+    iconBg: "#fdf3ec",
+    label: "Our Vision",
+    title: "Preferred Partner",
+    body: "Our vision is to be a world class manufacturer and a preferred partner for providing specialized high quality food ingredients and innovative solutions to the global food and nutritional industry.",
+    accentColor: "#e8650a",
+  },
+  {
     id: "mission",
     icon: Target,
     iconColor: "#1a5c38",
     iconBg: "#f0f7f3",
     label: "Our Mission",
     title: "Empowering Food Manufacturers",
-    body: "Empower food manufacturers worldwide with scientifically advanced ingredient systems that enhance product quality, consistency, and profitability.",
+    body: "Our mission is to help manufacturers around the world improve the quality of their food by bringing safe, affordable and effective functional food ingredients to the market, and ensure growth in the markets where we compete.",
     accentColor: "#1a5c38",
   },
   {
-    id: "vision",
-    icon: Eye,
-    iconColor: "#e8650a",
-    iconBg: "#fdf3ec",
-    label: "Our Vision",
-    title: "Trusted Global Partner",
-    body: "Be the trusted global partner for functional food ingredients, recognized for technical expertise and commitment to food science excellence.",
-    accentColor: "#e8650a",
+    id: "purpose",
+    icon: Target, // Or another icon
+    iconColor: "#2563eb",
+    iconBg: "#eff6ff",
+    label: "Our Purpose",
+    title: "Enabling Healthy Eating",
+    body: "Our purpose as a company is to enhance lives of everyone we interact by enabling healthy eating.",
+    accentColor: "#2563eb",
   },
 ];
 
@@ -48,7 +58,7 @@ export default function MissionVisionSection() {
         </motion.div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {cards.map((card, i) => {
             const Icon = card.icon;
             return (

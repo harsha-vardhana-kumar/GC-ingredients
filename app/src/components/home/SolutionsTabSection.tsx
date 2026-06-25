@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import { CheckCircle2, ArrowRight, FlaskConical, Layers, Zap, Shield } from "lucide-react";
+import Image from "next/image";
+
 
 const tabs = [
   {
@@ -123,10 +125,11 @@ export default function SolutionsTabSection() {
         >
           {/* Image */}
           <div className="lg:col-span-2 relative min-h-64">
-            <img
+            <Image
               src={current.image}
-              alt={current.headline}
-              className="w-full h-full object-cover"
+              alt={current.headline} title={current.headline}
+              fill
+              className="object-cover"
             />
             <div
               className="absolute inset-0 opacity-40"
@@ -156,7 +159,7 @@ export default function SolutionsTabSection() {
             </div>
 
             <a
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center gap-2 text-sm font-semibold text-white px-6 py-3 rounded-lg transition-all hover:-translate-y-0.5 hover:shadow-lg"
               style={{ background: current.accent }}
             >

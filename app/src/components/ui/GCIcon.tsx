@@ -77,8 +77,8 @@ export const iconMap = {
 
 export type IconName = keyof typeof iconMap;
 
-export function GCIcon({ name, className }: { name: IconName; className?: string }) {
+export function GCIcon({ name, className, style }: { name: IconName; className?: string; style?: React.CSSProperties }) {
   const IconComponent = iconMap[name];
   if (!IconComponent) return null;
-  return <IconComponent className={className} />;
+  return <IconComponent className={className} style={style} />;
 }

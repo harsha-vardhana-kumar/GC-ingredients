@@ -93,7 +93,7 @@ export default function SustainabilityGoals() {
           >
             <Image
               src="/images/app_meat.png"
-              alt="GC Ingredients sustainability and environmental practices"
+              alt="GC Ingredients sustainability and environmental practices" title="GC Ingredients sustainability and environmental practices"
               fill
               className="object-cover"
             />

@@ -94,7 +94,7 @@ export default function TeamGrid() {
                 <div className="relative w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 ring-2 ring-[#1a5c38]/30 ring-offset-2">
                   <Image
                     src="/images/hero-texture.png"
-                    alt={`${member.role} at GC Ingredients`}
+                    alt={`${member.role} at GC Ingredients`} title={`${member.role} at GC Ingredients`}
                     fill
                     className="object-cover object-center"
                   />

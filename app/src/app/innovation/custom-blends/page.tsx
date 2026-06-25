@@ -67,12 +67,12 @@ export default function CustomBlendsPage() {
 
         <MainContent
           sectionTag="Custom Development"
-          h2="Custom Formulations Built Around Your Exact Requirements"
-          para1="At GC Ingredients, every ingredient system we develop is custom — built specifically around your product specification, your production process, and your cost targets. We do not believe in one-size-fits-all solutions because your product is not one-size-fits-all."
-          para2="Our custom blend development capability covers everything from single-ingredient optimization to complete multi-component blend systems across all food categories we serve."
+          h2="High Performing Custom Food Blends — Liquid and Dry"
+          para1="Our custom blends are high performing and of superior quality. We offer both liquid and dry blending. We can develop a blend for your specific needs, or you can choose one of our existing blends for your formulation. To discuss your specific need, please reach out to us."
+          para2="From anti-microbial blends for corn tortillas to meat & poultry systems, bakery gum blends, cake blends, and flavor masking agents — our custom blend development capability covers every food category we serve."
           highlights={[
             "Spec-to-formula custom development",
-            "Iterative testing and refinement process",
+            "Both liquid and dry blending available",
             "Production-scale validation included",
             "Full technical documentation provided",
           ]}
@@ -83,35 +83,49 @@ export default function CustomBlendsPage() {
         <DetailCards
           sectionTag="What We Develop"
           h2="Custom Blend Development Capabilities"
-          subtext="From single-ingredient optimization to complete multi-component formula development."
+          subtext="From anti-microbial systems to bakery gum blends and flavor masking agents — every category covered."
           cards={[
             {
-              Icon: "Target",
+              Icon: "ShieldCheck",
               iconColor: "green",
-              title: "Single Ingredient Optimization",
+              title: "Anti-Microbial Blends for Corn Tortillas",
               description:
-                "Improving the performance of one key ingredient in your existing formula for texture, shelf life, or cost.",
+                "GC Concentrate, GC Max, GC Protect, GC Strong — liquid and dry anti-microbial systems engineered for corn-based tortilla manufacturing.",
+            },
+            {
+              Icon: "Wind",
+              iconColor: "orange",
+              title: "Baking Powder",
+              description:
+                "Single Acting Baking Powder, Double Acting Baking Powder, and Double Acting Baking Powder (Aluminum Free).",
+            },
+            {
+              Icon: "Package",
+              iconColor: "green",
+              title: "Tortilla Batch Packs",
+              description:
+                "Burrito/Food Service/California Style (thin, translucent), Gordita/Casera/Homestyle (thick, fluffy), Keto Friendly/Low Carb Tortilla (net carbs < 5g), Clean Label Tortilla Batch Packs, Flavored Tortillas.",
+            },
+            {
+              Icon: "Cake",
+              iconColor: "orange",
+              title: "Cake Blends & Meat Blends",
+              description:
+                "Cake: GCI Kake, GCI Glaze. Meat & Poultry: Ellogum 2000, Ellobind 5000 — buffered hydrocolloid systems to extend shelf life and replace phosphates/lactates.",
             },
             {
               Icon: "Layers",
-              iconColor: "orange",
-              title: "Multi-Component Blends",
+              iconColor: "green",
+              title: "Bakery Gum Blends & Dough Conditioners",
               description:
-                "Custom multi-ingredient systems built for your specific application and production process.",
+                "Ellogum 1000, Ellobind 4000, Ellobind 6000, Ellobind 7000 — specialized gum blends and dough conditioners for all bakery applications.",
             },
             {
               Icon: "FlaskConical",
-              iconColor: "green",
-              title: "Complete Formula Development",
-              description:
-                "Full product formula development from concept brief to production-ready ingredient system.",
-            },
-            {
-              Icon: "RefreshCw",
               iconColor: "orange",
-              title: "Reformulation Support",
+              title: "Flavor Masking Agents",
               description:
-                "Expert support for clean label transitions, cost reduction, or performance improvement projects.",
+                "Preservative Flavor Masking Agent and Bitter Masking Agent — mask off-notes from preservatives or bitter compounds in your formulation.",
             },
           ]}
         />

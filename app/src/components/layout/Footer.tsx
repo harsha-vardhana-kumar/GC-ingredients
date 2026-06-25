@@ -12,7 +12,7 @@ const footerLinks = {
     { label: "Overview", href: "/solutions" },
     { label: "Bakery & Tortilla Solutions", href: "/solutions/bakery-tortilla" },
     { label: "Nutrition Solutions", href: "https://primarianutrition.com/" },
-    { label: "Applications", href: "/applications" }
+    { label: "Applications", href: "/solutions/applications" }
   ],
   "Quick Links": [
     { label: "Innovation", href: "/innovation" },
@@ -38,15 +38,15 @@ export default function Footer() {
                 Talk to our food scientists and get a custom ingredient recommendation.
               </p>
             </div>
-            <div className="flex gap-3 flex-shrink-0">
+            <div className="flex flex-wrap gap-3">
               <a
-                href="#contact"
+                href="/contact"
                 className="flex items-center gap-2 bg-[#e8650a] hover:bg-[#f07a2a] text-white font-semibold px-6 py-3 rounded-lg transition-all hover:-translate-y-0.5 text-sm"
               >
                 Request a Sample <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="#contact"
+                href="/contact"
                 className="flex items-center gap-2 border border-white/30 hover:border-white hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-lg transition-all text-sm"
               >
                 Talk to an Expert
@@ -64,7 +64,7 @@ export default function Footer() {
             <div className="mb-6">
               <Image 
                 src="/images/gcingredients_logo.webp" 
-                alt="GC Ingredients" 
+                alt="GC Ingredients" title="GC Ingredients" 
                 width={200} 
                 height={50} 
                 className="h-12 w-auto object-contain brightness-0 invert"
@@ -114,11 +114,11 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-start gap-2 text-green-200 text-sm">
                 <MapPin className="w-4 h-4 text-[#e8650a] shrink-0 mt-0.5" />
-                <span>Address placeholder</span>
+                <span>3450 Atlanta Industrial Parkway NW, Atlanta, GA 30331</span>
               </div>
               <div className="flex items-center gap-2 text-green-200 text-sm">
                 <Phone className="w-4 h-4 text-[#e8650a] shrink-0" />
-                <span>+1 (XXX) XXX-XXXX</span>
+                <span>(678) 974-0600</span>
               </div>
               <div className="flex items-center gap-2 text-green-200 text-sm">
                 <Mail className="w-4 h-4 text-[#e8650a] shrink-0" />
@@ -137,12 +137,10 @@ export default function Footer() {
           <p className="text-green-300 text-xs">
             © {new Date().getFullYear()} GC Ingredients. All rights reserved.
           </p>
-          <div className="flex gap-4">
-            {["Privacy Policy", "Terms of Use", "Cookie Policy"].map((t) => (
-              <a key={t} href="#" className="text-green-300 hover:text-white text-xs transition-colors">
-                {t}
-              </a>
-            ))}
+          <div className="flex flex-wrap gap-4">
+              <a href="/privacy-policy" className="text-green-300 hover:text-white text-xs transition-colors">Privacy Policy</a>
+              <a href="/terms-of-use" className="text-green-300 hover:text-white text-xs transition-colors">Terms of Use</a>
+              <a href="/cookie-policy" className="text-green-300 hover:text-white text-xs transition-colors">Cookie Policy</a>
           </div>
           <div className="flex items-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-green-400 animate-pulse" />

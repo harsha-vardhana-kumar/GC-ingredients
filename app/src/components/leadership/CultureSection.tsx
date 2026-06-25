@@ -88,7 +88,7 @@ export default function CultureSection() {
               >
                 <Image
                   src="/images/hero-preservatives.png"
-                  alt={img.alt}
+                  alt={img.alt} title={img.alt}
                   fill
                   className={`object-cover ${img.position}`}
                 />

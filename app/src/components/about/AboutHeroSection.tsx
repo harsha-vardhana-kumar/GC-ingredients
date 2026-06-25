@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { ArrowRight, Phone } from "lucide-react";
 import Image from "next/image";
 
-const fadeUp = {
+const fadeUp: any = {
   hidden: { opacity: 0, y: 32 },
   visible: (delay: number = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] as const, delay },
+    transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1], delay },
   }),
 };
 
@@ -45,8 +45,7 @@ export default function AboutHeroSection() {
               animate="visible"
               custom={0.1}
             >
-              From Ingredient Supplier to{" "}
-              <span className="text-gradient-green">Innovation Partner</span>
+              About Us
             </motion.h1>
 
             <motion.p
@@ -56,9 +55,7 @@ export default function AboutHeroSection() {
               animate="visible"
               custom={0.2}
             >
-              25+ years of food science expertise powering food manufacturers
-              worldwide with scientifically advanced, reliable ingredient
-              systems.
+              We are a strategically aligned food science partner supplying multi-functional formulations that help food manufacturers globally to develop value added food solutions.
             </motion.p>
 
             <motion.div
@@ -71,7 +68,7 @@ export default function AboutHeroSection() {
               <a href="/solutions" className="btn-primary">
                 Explore Our Solutions <ArrowRight className="w-4 h-4" />
               </a>
-              <a href="#contact" className="btn-secondary">
+              <a href="/contact" className="btn-secondary">
                 <Phone className="w-4 h-4" /> Contact Our Team
               </a>
             </motion.div>
@@ -85,9 +82,9 @@ export default function AboutHeroSection() {
               custom={0.4}
             >
               {[
-                { value: "25+", label: "Years of Expertise" },
+                { value: "2004", label: "Founded" },
                 { value: "2,500+", label: "Formulations" },
-                { value: "100+", label: "Technical Experts" },
+                { value: "Global", label: "Reach" },
               ].map((item) => (
                 <div key={item.label}>
                   <div className="text-2xl font-bold font-[family-name:var(--font-plus-jakarta)] text-[#1a5c38]">
@@ -109,7 +106,7 @@ export default function AboutHeroSection() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
               <Image
                 src="/images/innovation_hero_lab.png"
-                alt="GC Ingredients manufacturing facility and R&D laboratory"
+                alt="GC Ingredients manufacturing facility and R&D laboratory" title="GC Ingredients manufacturing facility and R&D laboratory"
                 fill
                 className="object-cover"
                 priority
@@ -125,7 +122,7 @@ export default function AboutHeroSection() {
                     </div>
                     <div>
                       <div className="text-[#111827] font-semibold text-sm">
-                        Founded 1998 • Irving, TX
+                        Founded 2004 • Irving, TX
                       </div>
                       <div className="text-[#6b7280] text-xs">
                         120,000 sq ft state-of-the-art facility

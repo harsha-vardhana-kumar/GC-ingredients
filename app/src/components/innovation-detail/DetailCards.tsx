@@ -70,7 +70,8 @@ export default function DetailCards({
                     border: isOrange ? "1px solid rgba(232,101,10,0.15)" : "1px solid rgba(26,92,56,0.12)",
                   }}
                 >
-                  <card.Icon
+                  <GCIcon
+                    name={card.Icon}
                     className="w-6 h-6"
                     style={{ color: isOrange ? "#e8650a" : "#1a5c38" }}
                   />

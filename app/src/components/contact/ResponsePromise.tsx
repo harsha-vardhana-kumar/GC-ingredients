@@ -16,7 +16,7 @@ export default function ResponsePromise() {
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#1a5c38] text-white text-sm font-medium mb-6">
             Our Promise
           </div>
-          <h2 className="text-4xl font-bold font-[family-name:var(--font-plus-jakarta)] text-[#111827] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-plus-jakarta)] text-[#111827] mb-4">
             We Take Every Enquiry Seriously
           </h2>
         </motion.div>

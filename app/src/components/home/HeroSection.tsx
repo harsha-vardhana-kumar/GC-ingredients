@@ -7,38 +7,24 @@ import Image from "next/image";
 const slides = [
   {
     id: 1,
-    title: "Meat & Poultry Ingredient Systems",
-    description: "Enhance texture, shelf life, and quality in processed meat applications through our advanced functional systems.",
+    title: "Purposefully made solutions for you",
+    description: "Over 20 years of excellence – strategically providing high-quality formulations and superior technical support to the food and nutrition industry.",
     image: "/images/hero-meat.png",
-    badge: "Meat & Poultry Solutions"
+    badge: "GC Ingredients"
   },
   {
     id: 2,
-    title: "Bakery & Tortilla Solutions",
-    description: "Deliver consistency, softness, and superior performance in baked goods with our specialized ingredient blends.",
+    title: "Bakery / Tortilla Solutions",
+    description: "Your partner GCI – strategically providing high-quality formulations and superior technical support to the food and nutrition industry.",
     image: "/images/hero-bakery.png",
     badge: "Bakery & Tortilla"
   },
   {
     id: 3,
-    title: "Dairy Functional Systems",
-    description: "Improve stability, texture, and mouthfeel in dairy products from yogurt to specialized cheese applications.",
+    title: "Launches Primaria Nutrition",
+    description: "Nutrition solutions. Over 20 years of excellence – strategically providing high-quality formulations and superior technical support to the food and nutrition industry.",
     image: "/images/hero-dairy.png",
-    badge: "Dairy Systems"
-  },
-  {
-    id: 4,
-    title: "Hydrocolloid & Texture Systems",
-    description: "Control viscosity, binding, and product structure precisely with our innovative texturizing solutions.",
-    image: "/images/hero-texture.png",
-    badge: "Hydrocolloids / Texture"
-  },
-  {
-    id: 5,
-    title: "Custom Ingredient Innovation",
-    description: "Tailored ingredient solutions developed through advanced R&D to meet your unique product specifications.",
-    image: "/images/hero-innovation.png",
-    badge: "Innovation / R&D"
+    badge: "Primaria Nutrition"
   }
 ];
 
@@ -75,7 +61,7 @@ export default function HeroSection() {
         >
           <Image
             src={slide.image}
-            alt={slide.title}
+            alt={slide.title} title={slide.title}
             fill
             priority={index === 0}
             className="object-cover"
@@ -121,7 +107,7 @@ export default function HeroSection() {
                   Explore Solutions <ChevronRight className="w-5 h-5" />
                 </a>
                 <a 
-                  href="#contact" 
+                  href="/contact" 
                   className="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-lg font-bold flex items-center gap-2 hover:bg-white/20 transition-all"
                 >
                   <Phone className="w-5 h-5" />

@@ -83,7 +83,7 @@ export default function ManufacturingHeroSection() {
           {/* Right */}
           <motion.div className="relative" initial={{ opacity: 0, x: 48 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}>
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3]" style={{ boxShadow: "0 0 0 3px rgba(26,92,56,0.3), 0 24px 64px rgba(0,0,0,0.25)" }}>
-              <Image src="/images/1_Freshly_baked_artisan_sourdoug.png" alt="GC Ingredients 120,000 sq ft manufacturing facility" fill className="object-cover" priority />
+              <Image src="/images/1_Freshly_baked_artisan_sourdoug.png" alt="GC Ingredients 120,000 sq ft manufacturing facility" title="GC Ingredients 120,000 sq ft manufacturing facility" fill className="object-cover" priority />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#0d3a22]/40 via-transparent to-transparent" />
             </div>
             <motion.div className="absolute bottom-5 left-5 bg-white rounded-xl p-4 shadow-xl flex items-center gap-3" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.5 }}>

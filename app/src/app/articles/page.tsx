@@ -13,6 +13,25 @@ import CTASection from "../../components/articles/CTASection";
 
 export default function ArticlesPage() {
   const [searchQuery, setSearchQuery] = useState("");
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "GC Ingredients Knowledge Base & Case Studies",
+    "description": "Functional food ingredient research, applications, and formulation case studies.",
+    "author": {
+      "@type": "Organization",
+      "name": "GC Ingredients"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "GC Ingredients",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://gcingredients.com/images/gcingredients_logo.webp"
+      }
+    }
+  };
+
   return (
     <>
       <Navbar />
@@ -27,6 +46,10 @@ export default function ArticlesPage() {
         <CTASection />
       </main>
       <Footer />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
     </>
   );
 }

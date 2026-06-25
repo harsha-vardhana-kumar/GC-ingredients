@@ -58,7 +58,7 @@ function ArticleCard({ article, index }: { article: Article; index: number }) {
     >
       <div className="relative h-48 overflow-hidden">
         <motion.div className="absolute inset-0" whileHover={{ scale: 1.05 }} transition={{ duration: 0.45 }}>
-          <Image src="/images/rd_lab1.png" alt={article.title} fill className="object-cover" />
+          <Image src="/images/rd_lab1.png" alt={article.title} title={article.title} fill className="object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
         </motion.div>
         <span className="absolute top-3 left-3 text-xs font-bold px-2.5 py-1 rounded-full" style={{ background: colors.bg, color: colors.text }}>

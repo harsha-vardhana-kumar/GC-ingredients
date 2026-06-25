@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 
 interface NavItem {
@@ -44,7 +45,7 @@ const navLinks: NavLink[] = [
         label: "Bakery & Tortilla", 
         href: "/solutions/bakery-tortilla",
         items: [
-          { label: "Food Preservative Blends", href: "/solutions/bakery-tortilla#food-preservative-blends" },
+          { label: "Food Preservative Blends", href: "/solutions/bakery-tortilla#preservative-blends" },
           { label: "Tortilla Batch Packs", href: "/solutions/bakery-tortilla#tortilla-batch-packs" },
           { label: "Leavening Agents", href: "/solutions/bakery-tortilla#leavening-agents" },
           { label: "Gums & Stabilizers", href: "/solutions/bakery-tortilla#gums-stabilizers" },
@@ -124,16 +125,16 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2 shrink-0">
+          <Link href="/" className="flex items-center gap-2 shrink-0">
             <Image
               src="/images/gcingredients_logo.webp"
-              alt="GC Ingredients"
+              alt="GC Ingredients" title="GC Ingredients"
               width={200}
               height={50}
               className="h-14 w-auto object-contain"
               priority
             />
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
 
@@ -145,7 +146,7 @@ export default function Navbar() {
                 onMouseEnter={() => link.children && setActiveDropdown(link.label)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <a
+                <Link
                   href={link.href}
                   target={link.href.startsWith('http') ? "_blank" : undefined}
                   rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}
@@ -155,13 +156,13 @@ export default function Navbar() {
                   {link.children && (
                     <ChevronDown className="w-3 h-3 transition-transform group-hover:rotate-180" />
                   )}
-                </a>
+                </Link>
 
                 {/* Standard Dropdown */}
                 {link.children && activeDropdown === link.label && link.type === 'dropdown' && (
                   <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
                     {link.children.map((child) => (
-                      <a
+                      <Link
                         key={child.label}
                         href={child.href}
                         target={child.isExternal ? "_blank" : undefined}
@@ -170,7 +171,7 @@ export default function Navbar() {
                       >
                         <span>{child.label}</span>
                         {child.isExternal && <span className="text-xs">↗</span>}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -180,7 +181,7 @@ export default function Navbar() {
                   <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-[700px] bg-white rounded-xl shadow-xl border border-gray-100 p-6 z-50 flex gap-6">
                      <div className="flex flex-col gap-3 w-1/3 border-r border-gray-100 pr-6">
                        {link.children.filter(c => !c.items).map(child => (
-                          <a
+                          <Link
                             key={child.label}
                             href={child.href}
                             target={child.isExternal ? "_blank" : undefined}
@@ -189,24 +190,24 @@ export default function Navbar() {
                           >
                             <span>{child.label}</span>
                             {child.isExternal && <span className="text-xs text-gray-500">↗</span>}
-                          </a>
+                          </Link>
                        ))}
                      </div>
                      <div className="flex-1 grid grid-cols-2 gap-6">
                         {link.children.filter(c => c.items).map(section => (
                           <div key={section.label}>
-                            <a href={section.href} className="text-[15px] font-bold text-gray-900 border-b border-gray-100 pb-2 mb-3 block hover:text-gc-green transition-colors">
+                            <Link href={section.href} className="text-[15px] font-bold text-gray-900 border-b border-gray-100 pb-2 mb-3 block hover:text-gc-green transition-colors">
                               {section.label}
-                            </a>
+                            </Link>
                             <div className="flex flex-col gap-2">
                               {section.items?.map(item => (
-                                <a
+                                <Link
                                   key={item.label}
                                   href={item.href}
                                   className="text-[14px] text-gray-600 hover:text-gc-green transition-colors"
                                 >
                                   {item.label}
-                                </a>
+                                </Link>
                               ))}
                             </div>
                           </div>
@@ -220,9 +221,9 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden xl:flex items-center gap-3">
-            <a href="#contact" className="btn-primary text-[15px] py-2! px-4!">
+            <Link href="/contact" className="btn-primary text-[15px] py-2! px-4!">
               Request Sample
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -242,7 +243,7 @@ export default function Navbar() {
               {navLinks.map((link) => (
                 <div key={link.label}>
                   <div className="flex items-center justify-between px-4 py-2.5">
-                    <a
+                    <Link
                       href={link.href}
                       target={link.href.startsWith('http') ? "_blank" : undefined}
                       rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}
@@ -250,13 +251,13 @@ export default function Navbar() {
                       onClick={() => !link.children && setMobileOpen(false)}
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </div>
                   
                   {link.children && link.type === 'dropdown' && (
                     <div className="bg-gray-50/50 py-1 ml-4 border-l-2 border-gray-100">
                       {link.children.map((child) => (
-                        <a
+                        <Link
                           key={child.label}
                           href={child.href}
                           target={child.isExternal ? "_blank" : undefined}
@@ -266,7 +267,7 @@ export default function Navbar() {
                         >
                           <span>{child.label}</span>
                           {child.isExternal && <span className="text-xs">↗</span>}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   )}
@@ -275,7 +276,7 @@ export default function Navbar() {
                     <div className="bg-gray-50/50 py-2 ml-4 border-l-2 border-gray-100 space-y-4">
                       {link.children.map((child) => (
                         <div key={child.label} className="px-6">
-                           <a
+                           <Link
                               href={child.href}
                               target={child.isExternal ? "_blank" : undefined}
                               rel={child.isExternal ? "noopener noreferrer" : undefined}
@@ -284,18 +285,18 @@ export default function Navbar() {
                            >
                               <span>{child.label}</span>
                               {child.isExternal && <span className="text-xs">↗</span>}
-                           </a>
+                           </Link>
                            {child.items && (
                              <div className="flex flex-col gap-2 pl-4 border-l border-gray-200 mt-2">
                                {child.items.map((item) => (
-                                 <a
+                                 <Link
                                    key={item.label}
                                    href={item.href}
                                    className="text-[14px] text-gray-500 hover:text-gc-green"
                                    onClick={() => setMobileOpen(false)}
                                  >
                                     {item.label}
-                                 </a>
+                                 </Link>
                                ))}
                              </div>
                            )}
@@ -307,9 +308,9 @@ export default function Navbar() {
               ))}
             </div>
             <div className="mt-6 px-4 pb-4">
-              <a href="#contact" className="btn-primary w-full justify-center py-3 text-[15px]" onClick={() => setMobileOpen(false)}>
+              <Link href="/contact" className="btn-primary w-full justify-center py-3 text-[15px]" onClick={() => setMobileOpen(false)}>
                 Request Sample
-              </a>
+              </Link>
             </div>
           </div>
         )}

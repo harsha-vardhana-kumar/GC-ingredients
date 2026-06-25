@@ -46,7 +46,7 @@ export default function RDOverview() {
           {/* Right */}
           <motion.div className="relative" initial={{ opacity: 0, x: 48 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}>
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5]" style={{ boxShadow: "0 0 0 3px rgba(26,92,56,0.18), 0 24px 64px rgba(0,0,0,0.12)" }}>
-              <Image src="/images/hero-leavening.png" alt="GC Ingredients R&D laboratory conducting formulation trials" fill className="object-cover" />
+              <Image src="/images/hero-leavening.png" alt="GC Ingredients R&D laboratory conducting formulation trials" title="GC Ingredients R&D laboratory conducting formulation trials" fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0d3a22]/35 via-transparent to-transparent" />
             </div>
             <div className="absolute bottom-5 left-5 bg-[#e8650a] text-white text-sm font-bold px-4 py-2 rounded-xl shadow-lg">

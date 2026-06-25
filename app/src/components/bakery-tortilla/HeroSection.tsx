@@ -32,10 +32,10 @@ export default function BakeryHeroSection() {
               variants={fadeUp(0.1)} initial="hidden" animate="visible"
             >
               Shaping the Future of{" "}
-              <span className="text-[#e8650a]">Bakery &amp; Tortilla Manufacturing</span>
+              <span className="text-[#e8650a]">Bakery &amp; Tortilla Industry</span>
             </motion.h1>
             <motion.p className="text-green-200 leading-relaxed mb-8 text-[17px]" variants={fadeUp(0.2)} initial="hidden" animate="visible">
-              From food preservative blends to custom leavening agents — GC Ingredients delivers scientifically advanced, reliable ingredient systems built specifically for bakery and tortilla manufacturers.
+              Create the finished product you want — while leaving the functional part to us. Utilizing our global network of highest quality and tightly screened ingredient suppliers, we customize a solution that meets your needs. Our customized dry and liquid premixes are formulated to meet your exacting standards and improve stability, tolerate heat, and eliminate undesirable flavors and odors.
             </motion.p>
             <motion.div className="flex flex-wrap gap-4 mb-12" variants={fadeUp(0.3)} initial="hidden" animate="visible">
               <a href="#products" className="inline-flex items-center gap-2 bg-[#e8650a] hover:bg-[#f07a2a] text-white font-semibold px-7 py-3.5 rounded-xl transition-all hover:-translate-y-0.5 shadow-lg shadow-[#e8650a]/30">
@@ -63,7 +63,7 @@ export default function BakeryHeroSection() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
           >
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3]" style={{ boxShadow: "0 0 0 3px rgba(26,92,56,0.3), 0 24px 64px rgba(0,0,0,0.25)" }}>
-              <Image src="/images/hero-innovation.png" alt="GC Ingredients bakery and tortilla manufacturing ingredient systems" fill className="object-cover" priority />
+              <Image src="/images/hero-innovation.png" alt="GC Ingredients bakery and tortilla manufacturing ingredient systems" title="GC Ingredients bakery and tortilla manufacturing ingredient systems" fill className="object-cover" priority />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#0d3a22]/40 via-transparent to-transparent" />
             </div>
             <div className="absolute bottom-5 left-5 bg-[#e8650a] text-white text-sm font-bold px-4 py-2 rounded-xl shadow-lg">

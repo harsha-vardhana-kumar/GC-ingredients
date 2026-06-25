@@ -6,10 +6,10 @@ const nextConfig = {
     unoptimized: true,
   },
   typescript: {
-    ignoreBuildErrors: true,
+    // strict checking enabled
   },
   eslint: {
-    ignoreDuringBuilds: true,
+    // strict linting enabled
   },
   webpack: (config) => {
     config.resolve.symlinks = false;

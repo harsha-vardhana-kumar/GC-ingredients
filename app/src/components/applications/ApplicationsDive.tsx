@@ -162,7 +162,7 @@ export default function ApplicationsDive() {
                 >
                   <Image
                     src="/images/lab_facility.png"
-                    alt={`GC Ingredients ${app.headline}`}
+                    alt={`GC Ingredients ${app.headline}`} title={`GC Ingredients ${app.headline}`}
                     fill
                     className="object-cover"
                   />

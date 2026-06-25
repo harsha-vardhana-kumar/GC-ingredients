@@ -81,7 +81,7 @@ export default function WhyGCISolutions() {
           >
             <Image
               src="/images/6_Homemade_creamy_mayonnaise.png"
-              alt="GC Ingredients food science laboratory and quality control"
+              alt="GC Ingredients food science laboratory and quality control" title="GC Ingredients food science laboratory and quality control"
               fill
               className="object-cover"
             />

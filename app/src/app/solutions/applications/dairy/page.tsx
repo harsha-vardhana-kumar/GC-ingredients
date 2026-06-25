@@ -50,13 +50,13 @@ export default function DairyPage() {
         />
 
         <AppOverview
-          h2="Stabilizer and Texture Systems Built for Dairy"
-          para1="Dairy manufacturing demands ingredient systems that deliver consistent viscosity, texture, and stability across a wide range of processing conditions. GC Ingredients provides hydrocolloid and stabilizer solutions engineered specifically for dairy applications."
+          h2="Blends for Cream Cheese, Shredded Cheese, Yogurt and Ice Cream"
+          para1="GC Ingredients offers blends for various applications, including cream cheese stabilizer blends, anti-caking blends for shredded cheese, yogurt blends, and ice cream stabilizers. Our products are safe and easy to handle and we can ship to your location with competitive lead times."
           para2="From cheese texture systems to yogurt viscosity control and ice cream stabilizers — our formulations are built around your specific dairy application and processing environment."
           highlights={[
-            "Viscosity and texture control",
-            "Moisture management systems",
-            "Freeze-thaw stability",
+            "Cream cheese stabilizer blends",
+            "Anti-caking blends for shredded cheese",
+            "Yogurt and ice cream stabilizers",
             "Clean label compatible options",
           ]}
           buttonText="Explore Dairy Ingredient Solutions"
@@ -69,27 +69,27 @@ export default function DairyPage() {
           cards={[
             {
               Icon: "Droplets",
-              name: "Hydrocolloids",
-              description: "Viscosity and texture control for dairy products.",
-              applications: ["Yogurt", "Dairy Beverages", "Sauces"],
+              name: "Cream Cheese Stabilizer Blend",
+              description: "A blend of locust bean gum and guar gum to produce delicious cream cheese with the ideal texture and stability.",
+              applications: ["Cream Cheese", "Spreadable Cheeses"],
             },
             {
               Icon: "Layers",
-              name: "Gums & Stabilizers",
-              description: "Structure and moisture control across dairy categories.",
-              applications: ["Cheese", "Ice Cream", "Yogurt"],
+              name: "Modified Tapioca Starches",
+              description: "Tapioca starches that provide excellent sheen and a creamy texture to yogurts, ice creams, and other cream based products.",
+              applications: ["Yogurt", "Ice Cream", "Cream-based Products"],
             },
             {
               Icon: "FlaskConical",
-              name: "Custom Blends",
-              description: "Application-specific dairy systems built around your requirements.",
+              name: "PCP-Free Guar Gum",
+              description: "Guar sourced from reputable manufacturers that have very strict quality control and are PCP Free — ideal for dairy applications.",
               applications: ["All Dairy Categories"],
             },
             {
               Icon: "Thermometer",
-              name: "Starches",
-              description: "Thickening and stability systems for dairy beverages and desserts.",
-              applications: ["Dairy Beverages", "Desserts"],
+              name: "Anti-Caking Blends",
+              description: "Specialized anti-caking blends to prevent clumping and maintain free-flowing texture in shredded cheese applications.",
+              applications: ["Shredded Cheese", "Grated Cheese"],
             },
           ]}
         />

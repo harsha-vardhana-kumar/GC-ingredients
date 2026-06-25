@@ -55,7 +55,7 @@ export default function CommunityStories() {
               <div className="relative h-48 overflow-hidden">
                 <Image
                   src="/images/app_bakery.png"
-                  alt={s.title}
+                  alt={s.title} title={s.title}
                   fill
                   className="object-cover group-hover:scale-[1.02] transition-transform duration-500"
                 />

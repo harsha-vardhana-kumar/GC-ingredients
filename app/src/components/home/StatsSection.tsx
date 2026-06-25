@@ -2,12 +2,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 20, suffix: "+", label: "Years in Business", description: "Founded 2004, serving global food leaders" },
-  { value: 18000, suffix: " MT", label: "Annual Capacity", description: "Across 3 manufacturing sites" },
-  { value: 500, suffix: "+", label: "Application Trials / Year", description: "In our dedicated food science lab" },
-  { value: 30, suffix: "+", label: "Countries Reached", description: "Americas, Europe, Middle East & Asia" },
-  { value: 100, suffix: "+", label: "Manufacturer Partners", description: "From startups to Fortune 500 brands" },
-  { value: 99.8, suffix: "%", label: "On-Time Delivery", description: "Over the last 36 months" },
+  { value: 23, suffix: "+", label: "Years", description: "family owned and operated" },
+  { value: 100, suffix: "+", label: "Years of combined expertise", description: "in innovation and manufacturing" },
+  { value: 120000, suffix: "+", label: "sq. ft.", description: "state-of-the-art processing facility" },
+  { value: 2500, suffix: "+", label: "formulations", description: "Purposefully designed formulations" },
 ];
 
 function CountUpNumber({ target, suffix }: { target: number; suffix: string }) {
@@ -60,14 +58,17 @@ export default function StatsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-green-400 text-sm font-semibold uppercase tracking-widest mb-3">
-            By the Numbers
+            About us
           </p>
-          <h2 className="text-4xl font-bold font-[family-name:var(--font-plus-jakarta)] text-white">
-            Two decades of measurable impact
+          <h2 className="text-3xl sm:text-4xl font-bold font-[family-name:var(--font-plus-jakarta)] text-white">
+            Purposefully-made solutions for you
           </h2>
+          <p className="mt-4 text-green-100 max-w-2xl mx-auto">
+            At GCI, we manufacture and distribute a wide range of food ingredients and custom formulations in powder and liquid form for food and nutritional industry.
+          </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-4xl lg:text-5xl font-bold font-[family-name:var(--font-plus-jakarta)] text-[#e8650a] mb-2">

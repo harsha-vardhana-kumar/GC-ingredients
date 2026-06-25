@@ -38,7 +38,7 @@ export default function LeadershipSection() {
                 <div className="relative w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-4 border-white/30 shadow-xl mb-6">
                   <Image
                     src="/images/rd_overview_lab.png"
-                    alt="Srikanth Gundavarapu, Founder & CEO of GC Ingredients"
+                    alt="Srikanth, MS, MBA, Founder of GC Ingredients" title="Srikanth, MS, MBA, Founder of GC Ingredients"
                     fill
                     className="object-cover object-top"
                   />
@@ -46,13 +46,13 @@ export default function LeadershipSection() {
 
                 {/* Name & title */}
                 <h3 className="text-white font-bold font-[family-name:var(--font-plus-jakarta)] text-xl text-center mb-1">
-                  Srikanth Gundavarapu
+                  Srikanth, MS, MBA
                 </h3>
-                <p className="text-green-300 text-sm text-center font-medium">Founder &amp; CEO</p>
+                <p className="text-green-300 text-sm text-center font-medium">Founder</p>
 
                 {/* Founding year badge */}
                 <div className="mt-5 bg-[#e8650a] text-white text-xs font-bold px-4 py-2 rounded-full">
-                  Founded GCI · 1998
+                  Founded GCI · 2004
                 </div>
               </div>
 
@@ -62,7 +62,7 @@ export default function LeadershipSection() {
                 <Quote className="w-10 h-10 text-[#1a5c38]/15 mb-4" />
 
                 <p className="text-[#374151] text-lg leading-relaxed mb-6">
-                  With decades of R&amp;D experience in food science, Srikanth founded GC Ingredients in 1998 with a
+                  With decades of R&amp;D experience in food science, Srikanth founded GC Ingredients in 2004 with a
                   vision to bring innovative ingredient solutions to food manufacturers across North America.
                 </p>
                 <p className="text-[#6b7280] leading-relaxed">

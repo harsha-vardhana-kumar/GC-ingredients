@@ -1,47 +1,31 @@
 "use client";
 import { motion } from "framer-motion";
-import { FlaskConical, HandshakeIcon, Lightbulb, CheckCircle2, Leaf } from "lucide-react";
+import { ShieldCheck, HeartHandshake, Lightbulb, Award } from "lucide-react";
 
 const values = [
   {
-    icon: FlaskConical,
-    title: "Science-Driven",
-    description:
-      "Every solution is backed by rigorous testing, application trials, and peer-reviewed food science data.",
-    color: "#1a5c38",
-    bg: "#f0f7f3",
+    icon: ShieldCheck,
+    title: "Safety",
+    description: "Safety is our top priority in everything we do.",
+    color: "#1a5c38", bg: "#f0f7f3",
   },
   {
-    icon: HandshakeIcon,
-    title: "Partnership",
-    description:
-      "Dedicated technical support throughout your entire product lifecycle — from first trial to production floor.",
-    color: "#1a5c38",
-    bg: "#f0f7f3",
+    icon: Award,
+    title: "Quality",
+    description: "Consistent product quality and rigorous testing.",
+    color: "#e8650a", bg: "#fdf8f0",
   },
   {
     icon: Lightbulb,
     title: "Innovation",
-    description:
-      "Continuous R&D investment in next-generation ingredient technologies to keep you ahead of market trends.",
-    color: "#1a5c38",
-    bg: "#f0f7f3",
+    description: "Continuous R&D investment in next-generation ingredient technologies.",
+    color: "#2563eb", bg: "#eff6ff",
   },
   {
-    icon: CheckCircle2,
-    title: "Reliability",
-    description:
-      "Consistent product quality and a robust supply chain so you never have to worry about ingredient security.",
-    color: "#1a5c38",
-    bg: "#f0f7f3",
-  },
-  {
-    icon: Leaf,
-    title: "Sustainability",
-    description:
-      "Environmentally responsible sourcing, clean-label formulations, and reduced food waste across our operations.",
-    color: "#1a5c38",
-    bg: "#f0f7f3",
+    icon: HeartHandshake,
+    title: "Respect",
+    description: "We treat our partners, customers, and team with utmost respect.",
+    color: "#7c3aed", bg: "#f5f3ff",
   },
 ];
 
@@ -63,20 +47,17 @@ export default function OurValuesSection() {
             <span className="text-gradient-green">Every Solution</span>
           </h2>
           <p className="text-[#6b7280] max-w-xl mx-auto text-lg">
-            Our values aren't just words — they define how we work, what we build, and who we partner with.
+            Our values aren&apos;t just words — they define how we work, what we build, and who we partner with.
           </p>
         </motion.div>
 
-        {/* Grid: 3 on top, 2 centered on bottom */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((val, i) => {
             const Icon = val.icon;
             return (
               <motion.div
                 key={val.title}
-                className={`bg-[#f8f5ef] rounded-2xl p-8 card-hover border border-[#e8e3d9] group relative overflow-hidden ${
-                  i === 3 ? "lg:col-start-1" : ""
-                }`}
+                className={`bg-[#f8f5ef] rounded-2xl p-8 card-hover border border-[#e8e3d9] group relative overflow-hidden`}
                 initial={{ opacity: 0, y: 32 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
@@ -100,8 +81,6 @@ export default function OurValuesSection() {
               </motion.div>
             );
           })}
-          {/* Filler card for 3+2 centering on lg */}
-          <div className="hidden lg:block" />
         </div>
       </div>
     </section>

@@ -3,22 +3,23 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, AlertCircle } from "lucide-react";
 
-const fadeUp = {
+const fadeUp: any = {
   hidden: { opacity: 0, y: 28 },
   visible: (delay: number = 0) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] as const, delay },
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1], delay },
   }),
 };
 
 const industries = [
-  { value: "", label: "Select your industry…" },
+  { value: "", label: "Select your area of interest…" },
   { value: "bakery", label: "Bakery" },
   { value: "tortilla", label: "Tortilla" },
   { value: "dairy", label: "Dairy" },
   { value: "meat", label: "Meat & Poultry" },
   { value: "snack", label: "Snack Foods" },
+  { value: "plant-visit", label: "Plant Visit" },
   { value: "other", label: "Other" },
 ];
 
@@ -49,17 +50,25 @@ const infoCards = [
     icon: MapPin,
     iconColor: "#e8650a",
     iconBg: "#fdf4ed",
-    label: "Visit Us",
-    detail: "2401 W Irving Blvd, Irving, TX 75061",
-    sub: "Headquarters & Manufacturing",
+    label: "Plant 1",
+    detail: "3401 Atlanta Industrial Pkwy NW",
+    sub: "Atlanta, GA 30331",
+  },
+  {
+    icon: MapPin,
+    iconColor: "#e8650a",
+    iconBg: "#fdf4ed",
+    label: "Plant 2 / Delivery",
+    detail: "3450 Atlanta Industrial Pkwy NW",
+    sub: "Atlanta, GA 30331",
   },
   {
     icon: Phone,
     iconColor: "#1a5c38",
     iconBg: "#f0f7f3",
     label: "Call Us",
-    detail: "+1 (972) 438-9400",
-    sub: "Mon–Fri, 8 AM – 5 PM CST",
+    detail: "(678) 974-0600",
+    sub: "Customer Service: (770) 695-1333",
   },
   {
     icon: Mail,
@@ -67,15 +76,7 @@ const infoCards = [
     iconBg: "#f0f7f3",
     label: "Email Us",
     detail: "info@gcingredients.com",
-    sub: "We reply within 24 business hours",
-  },
-  {
-    icon: Clock,
-    iconColor: "#e8650a",
-    iconBg: "#fdf4ed",
-    label: "Business Hours",
-    detail: "Mon–Fri: 8:00 AM – 5:00 PM CST",
-    sub: "Closed on US Federal Holidays",
+    sub: "custservice@gcingredients.com",
   },
 ];
 
@@ -284,10 +285,10 @@ export default function ContactFormSection() {
                 />
               </div>
 
-              {/* Industry */}
+              {/* Industry / Area of Interest */}
               <div>
                 <label htmlFor="industry" className="block text-sm font-semibold text-[#111827] mb-1.5 font-[family-name:var(--font-inter)]">
-                  Industry <span className="text-red-500">*</span>
+                  Area of Interest <span className="text-red-500">*</span>
                 </label>
                 <select
                   id="industry"
@@ -461,6 +462,25 @@ export default function ContactFormSection() {
               Prefer a direct conversation? Use the form and mention your availability —
               we&apos;ll call you.
             </motion.p>
+            {/* Map */}
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
+              className="mt-8 rounded-xl overflow-hidden shadow-md border border-gray-100 h-64 relative"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.6562095033734!2d-84.50989022378943!3d33.79532857325515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f51a4f0b2f5b87%3A0x6b8bc134b2f6990d!2s3450%20Atlanta%20Industrial%20Pkwy%20NW%2C%20Atlanta%2C%20GA%2030331!5e0!3m2!1sen!2sus!4v1714000000000!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0"
+              />
+            </motion.div>
           </div>
         </div>
       </div>

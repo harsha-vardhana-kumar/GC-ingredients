@@ -6,53 +6,48 @@ import { useEffect, useRef } from "react";
 
 const milestones = [
   {
-    year: "1998",
+    year: "2004",
     icon: Rocket,
     iconColor: "#e8650a",
     title: "GC Ingredients Founded",
-    description:
-      "Srikanth Gundavarapu launches GC Ingredients after years of R&D experience, beginning ingredient supply operations with a focus on quality and technical service.",
+    description: "Launched operations with a focus on custom functional ingredient blends for the baking and tortilla industries.",
     tag: "The Foundation",
     side: "right",
   },
   {
-    year: "2005",
+    year: "2008",
     icon: Factory,
     iconColor: "#1a5c38",
-    title: "Custom Blend Manufacturing Begins",
-    description:
-      "GCI launches its first in-house custom blending operation, moving into a 20,000 sq ft facility and introducing powder and liquid formulation capabilities.",
-    tag: "First Major Leap",
+    title: "Facility Expansion",
+    description: "Expanded manufacturing capacity and R&D lab to support growing customer demand across North America.",
+    tag: "Scaling Up",
     side: "left",
   },
   {
-    year: "2016",
+    year: "2014",
     icon: Building2,
     iconColor: "#e8650a",
-    title: "50,000 Sq Ft Facility Acquired",
-    description:
-      "Rapid growth demands more space. GCI purchases a 50,000 sq ft production facility, significantly expanding manufacturing capacity and operational efficiency.",
-    tag: "Scaling Up",
+    title: "Dairy & Meat Solutions",
+    description: "Diversified product portfolio by introducing specialized solutions for dairy, meat, and poultry processing.",
+    tag: "Diversification",
     side: "right",
   },
   {
-    year: "2021",
+    year: "2020",
     icon: FlaskConical,
     iconColor: "#1a5c38",
-    title: "70,000 Sq Ft Expansion + R&D Lab",
-    description:
-      "GCI expands to 70,000 sq ft and establishes a dedicated R&D laboratory and state-of-the-art QC lab, marking the transition from supplier to full innovation partner.",
-    tag: "Innovation Hub",
+    title: "Quality Certifications",
+    description: "Achieved GFSI / FSSC 22000 certification, cementing our commitment to world-class food safety and quality standards.",
+    tag: "Excellence",
     side: "left",
   },
   {
-    year: "2022",
+    year: "2026",
     icon: Sparkles,
     iconColor: "#e8650a",
-    title: "GCI 2.0 — Value-Added Products Launch",
-    description:
-      "GCI enters a new era with the launch of value-added product lines and next-generation ingredient systems, cementing its position as an innovation leader in the food industry.",
-    tag: "GCI 2.0",
+    title: "Primaria Nutrition Launched",
+    description: "Expanded into the nutritional sector, launching Primaria Nutrition to offer custom functional formulations and plant-based protein blends.",
+    tag: "A New Era",
     side: "right",
   },
 ];

@@ -43,7 +43,7 @@ export default function LabFacility() {
           {/* Right: image with floating badges */}
           <motion.div className="relative" initial={{ opacity: 0, x: 48 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}>
             <div className="relative rounded-2xl overflow-hidden h-[480px]" style={{ boxShadow: "0 0 0 3px rgba(26,92,56,0.3), 0 24px 64px rgba(0,0,0,0.3)" }}>
-              <Image src="/images/hero-hydrocolloids.png" alt="GC Ingredients state-of-the-art R&D laboratory facility" fill className="object-cover" />
+              <Image src="/images/hero-hydrocolloids.png" alt="GC Ingredients state-of-the-art R&D laboratory facility" title="GC Ingredients state-of-the-art R&D laboratory facility" fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0d3a22]/30 to-transparent" />
             </div>
             {/* Top right badge — hidden on mobile */}

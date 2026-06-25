@@ -9,7 +9,7 @@ const cards = [
     title: "See All Applications",
     desc: "Explore how GCI ingredient systems perform across bakery, tortilla, dairy, meat, snack foods, and prepared food applications.",
     cta: "View Applications",
-    href: "/applications",
+    href: "/solutions/applications",
   },
   {
     icon: FlaskConical,

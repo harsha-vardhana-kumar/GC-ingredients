@@ -51,8 +51,8 @@ export default function TortillaPage() {
 
         <AppOverview
           h2="Purpose-Built for Flour and Corn Tortilla Production"
-          para1="GC Ingredients specializes in tortilla ingredient systems — from complete batch packs to individual functional ingredients. Our solutions are trusted by tortilla manufacturers across North America for their consistency and production reliability."
-          para2="From soft flour tortillas to sturdy corn tortillas, wraps, and flatbreads — our formulations deliver the rollability, softness, and extended shelf life your customers demand."
+          para1="At GC Ingredients, we offer custom batch packs or individual ingredients to meet all your flour tortilla needs. Our products are safe and easy to handle and we can ship to your location with competitive lead times."
+          para2="GC Ingredients has also successfully developed various liquid preservative systems and gum blend systems for corn based tortillas. Whether you are making corn tortillas or corn chips, or whether you are stone grinding corn or using corn flour, we have a solution for you to obtain the desired shelf life, the right texture, and a clean flavor."
           highlights={[
             "Softness and rollability systems",
             "Extended shelf life blends",
@@ -69,26 +69,26 @@ export default function TortillaPage() {
           cards={[
             {
               Icon: "Package",
-              name: "Tortilla Batch Packs",
-              description: "Complete pre-measured systems for consistent production batch after batch.",
-              applications: ["Flour Tortillas", "Corn Tortillas", "Wraps"],
+              name: "Flour Tortilla Ingredients",
+              description: "Double Acting Baking Powder, Ellobind 7010, Guar Gum, Corn Starches, Xanthan Gum, Potato Starches, Tapioca Starches, Vital Wheat Gluten, Sorbic Acid, Wheat Protein Isolate, Potassium Sorbate.",
+              applications: ["Flour Tortillas", "Wraps", "Flatbreads"],
             },
             {
               Icon: "ShieldCheck",
-              name: "Food Preservative Blends",
-              description: "Extended shelf life solutions engineered for tortilla applications.",
-              applications: ["All Tortilla Types"],
+              name: "Corn Tortilla — Liquid (55 gal, 275 gal IBC, Tanker)",
+              description: "GC Max, GC Protect, GC Strong, GC Concentrate — anti-microbial liquid preservative systems for corn flour tortillas.",
+              applications: ["Corn Tortillas", "Corn Chips"],
             },
             {
               Icon: "Droplets",
-              name: "Gums & Stabilizers",
-              description: "Softness and flexibility systems that maintain quality over shelf life.",
-              applications: ["Flour Tortillas", "Flatbreads"],
+              name: "Corn Tortilla — Dry Form",
+              description: "Guar Gum, Enzyme Gum Blend EGB 07, Xanthan Gum, Dry Preservative Blend, Sodium CMC Gum, Anti-Staling Enzyme Softening Blend.",
+              applications: ["Corn Tortillas", "Stone Ground", "Corn Flour"],
             },
             {
               Icon: "Wind",
-              name: "Leavening Agents",
-              description: "Consistent texture and rise for flour tortillas and flatbreads.",
+              name: "Tortilla Batch Packs",
+              description: "Burrito / Food Service / California Style, Gordita / Casera, Homestyle, Keto Friendly / Low Carb, Flavored Tortillas, Clean Label Tortilla Batch Packs.",
               applications: ["Flour Tortillas", "Flatbreads"],
             },
           ]}

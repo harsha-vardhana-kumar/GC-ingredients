@@ -5,38 +5,35 @@ import { Users, Leaf, Heart, ArrowRight } from "lucide-react";
 const programs = [
   {
     icon: Users,
-    badge: "Community",
-    title: "Investing in Our Communities",
-    description:
-      "We actively support local education initiatives, food security programs, and community development projects in the regions where we operate and source.",
+    badge: "Empowerment",
+    title: "Women Empowerment & Education",
+    description: "We are proud to support the education and empowerment of girl children, ensuring they have access to the resources they need to build a brighter future. Through our ongoing partnerships with various non-governmental organizations (NGOs), we actively contribute to initiatives that provide schooling, skill development, and equal opportunities for young girls.",
     bullets: [
-      "Local education support programs",
-      "Food security and nutrition awareness",
-      "Community development partnerships",
+      "Education and schooling support",
+      "Skill development initiatives",
+      "Equal opportunities for young girls",
     ],
   },
   {
     icon: Leaf,
     badge: "Environment",
-    title: "Building a Sustainable Future",
-    description:
-      "From responsible raw material sourcing to waste reduction in our manufacturing process, we are committed to minimizing our environmental footprint at every step.",
+    title: "Environmental Stewardship",
+    description: "We are committed to reducing our environmental footprint. Our manufacturing facility in Irving, TX is designed with sustainability in mind, focusing on energy efficiency, waste reduction, and responsible sourcing. By continuously optimizing our operations, we aim to protect our planet for generations to come.",
     bullets: [
-      "Responsible ingredient sourcing",
-      "Manufacturing waste reduction",
-      "Energy efficiency improvements",
+      "Energy efficient manufacturing",
+      "Waste reduction",
+      "Responsible sourcing",
     ],
   },
   {
     icon: Heart,
-    badge: "People",
-    title: "Our People Are Our Strength",
-    description:
-      "We believe our team is our greatest asset. We invest in safe working conditions, continuous learning, fair compensation, and a culture of inclusion and respect.",
+    badge: "Community",
+    title: "Community Engagement",
+    description: "We believe in the power of community. GC Ingredients regularly participates in local outreach programs, food drives, and charitable events. Our goal is to foster a culture of giving and support those in need, creating a positive impact where we live and work.",
     bullets: [
-      "Safe and inclusive workplace",
-      "Continuous training and development",
-      "Fair compensation and benefits",
+      "Local outreach programs",
+      "Food drives",
+      "Charitable events",
     ],
   },
 ];

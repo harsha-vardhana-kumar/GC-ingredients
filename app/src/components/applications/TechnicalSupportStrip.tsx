@@ -38,20 +38,20 @@ export default function AppTechnicalSupportStrip() {
           </motion.div>
 
           {/* Right: stats */}
-          <div className="grid grid-cols-3 divide-x divide-white/20">
+          <div className="grid grid-cols-3 divide-x divide-white/20 w-full">
             {stats.map((s, i) => (
               <motion.div
                 key={s.label}
-                className="text-center px-4 py-6"
+                className="text-center px-1 sm:px-4 py-5 sm:py-6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.55, delay: i * 0.1 }}
               >
-                <div className="text-3xl lg:text-4xl font-bold font-[family-name:var(--font-plus-jakarta)] text-[#e8650a] mb-2">
+                  <div className="text-2xl sm:text-3xl lg:text-4xl font-bold font-[family-name:var(--font-plus-jakarta)] text-[#e8650a] mb-2">
                   {s.value}
-                </div>
-                <div className="text-white/70 text-sm">{s.label}</div>
+                  </div>
+                  <div className="text-white/70 text-xs sm:text-sm">{s.label}</div>
               </motion.div>
             ))}
           </div>

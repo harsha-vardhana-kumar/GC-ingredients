@@ -55,7 +55,7 @@ export default function AboutCTASection() {
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 justify-center">
             <a
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center gap-2 font-semibold text-sm px-7 py-4 rounded-xl text-white transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(232,101,10,0.4)]"
               style={{ background: "#e8650a" }}
             >

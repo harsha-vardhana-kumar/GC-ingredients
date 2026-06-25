@@ -61,13 +61,11 @@ export default function SolutionsHeroSection() {
           className="text-4xl sm:text-5xl lg:text-6xl font-bold font-[family-name:var(--font-plus-jakarta)] text-white leading-[1.1] mb-6 max-w-5xl mx-auto"
           variants={fadeUp(0.1)} initial="hidden" animate="visible"
         >
-          A to Z Ingredient Solutions for{" "}
-          <span className="text-[#e8650a]">Food Manufacturers</span>
+          Solutions Built for <span className="text-[#e8650a]">Your Success</span>
         </motion.h1>
 
-        <motion.p className="text-lg text-green-200 leading-relaxed max-w-2xl mx-auto mb-10" variants={fadeUp(0.2)} initial="hidden" animate="visible">
-          From custom blend development to full-scale production supply — GC Ingredients delivers
-          end-to-end ingredient systems designed around your product, your process, and your goals.
+        <motion.p className="text-lg text-green-200 leading-relaxed max-w-4xl mx-auto mb-10 text-justify sm:text-center" variants={fadeUp(0.2)} initial="hidden" animate="visible">
+          Our customized product development begins by thoroughly understanding our clients&apos; products, processes, and problems. Our experienced food scientists meticulously test various options in our state-of-the-art laboratory, identifying and resolving potential issues. Whether optimizing existing formulations or creating novel ingredient systems, we ensure our solutions seamlessly integrate with our clients&apos; existing manufacturing processes. Our applications expertise allows us to provide targeted formulations that minimize risk and maximize production success for our customers. We offer robust applications support to deliver rapid turnaround times from our facility to yours.
         </motion.p>
 
         <motion.div className="flex flex-wrap gap-4 justify-center mb-16" variants={fadeUp(0.3)} initial="hidden" animate="visible">

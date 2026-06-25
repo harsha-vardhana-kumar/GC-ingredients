@@ -50,14 +50,14 @@ export default function MeatPoultryPage() {
         />
 
         <AppOverview
-          h2="Yield, Texture and Shelf Life Solutions for Meat Processing"
-          para1="GC Ingredients develops functional ingredient systems specifically for meat and poultry manufacturers — focusing on yield improvement, texture consistency, and shelf life extension across processed meat, poultry, and cured product applications."
-          para2="Our meat ingredient systems are engineered to perform in high-speed production environments, delivering consistent results across every batch."
+          h2="Ingredients to Replace Phosphates and Lactates in Meat Applications"
+          para1="At GC Ingredients we have ingredients to replace phosphates and lactates in various meat applications. Our buffered systems are designed to extend the shelf life of hot dogs, turkeys, hams, sausages etc., and to potentially replace phosphates and lactates."
+          para2="We also offer high quality hydrocolloid systems to replace phosphates in poultry. Moreover, our products are safe and easy to handle and we can ship to your location with competitive lead times."
           highlights={[
-            "Yield improvement systems",
-            "Texture and binding solutions",
-            "Shelf life extension",
-            "Marinade and injection systems",
+            "Phosphate & lactate replacement systems",
+            "Extended shelf life for processed meats",
+            "Hydrocolloid systems for poultry",
+            "Safe, easy to handle formulations",
           ]}
           buttonText="Explore Meat & Poultry Solutions"
           Icon="Beef"
@@ -69,27 +69,27 @@ export default function MeatPoultryPage() {
           cards={[
             {
               Icon: "ShieldCheck",
-              name: "Food Preservative Blends",
-              description: "Shelf life extension systems for processed meat products.",
-              applications: ["All Processed Meats"],
+              name: "Meat & Poultry Preservative Blends",
+              description: "GC Microstat-A and GC Microstat-B — buffered systems that extend shelf life and potentially replace phosphates and lactates in hot dogs, turkeys, hams, and sausages.",
+              applications: ["Hot Dogs", "Turkey", "Ham", "Sausages"],
             },
             {
               Icon: "Layers",
-              name: "Phosphates & Binders",
-              description: "Yield improvement and texture enhancement for meat products.",
-              applications: ["Processed Meats", "Poultry"],
-            },
-            {
-              Icon: "FlaskConical",
-              name: "Custom Marinades",
-              description: "Flavor and moisture retention systems for marinated products.",
-              applications: ["Poultry", "Beef", "Pork"],
+              name: "Hydrocolloid Systems for Poultry",
+              description: "Ellobind 5000 — high quality hydrocolloid system designed to replace phosphates in poultry applications.",
+              applications: ["Poultry", "Marinated Chicken", "Turkey"],
             },
             {
               Icon: "Droplets",
-              name: "Starches",
-              description: "Binding and texture systems for processed meat and sausage applications.",
-              applications: ["Processed Meats", "Sausages"],
+              name: "Starches for Meat",
+              description: "Potato Starches, Tapioca Starches, and Corn Starches — binding and texture systems for processed meat and sausage applications.",
+              applications: ["Processed Meats", "Sausages", "Poultry"],
+            },
+            {
+              Icon: "FlaskConical",
+              name: "Carageenans",
+              description: "High performance carrageenan systems for yield improvement and moisture retention in meat and poultry products.",
+              applications: ["All Meat & Poultry"],
             },
           ]}
         />

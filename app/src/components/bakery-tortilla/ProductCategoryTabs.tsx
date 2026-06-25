@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -19,27 +19,32 @@ const tabs: Tab[] = [
     id: "preservative-blends",
     label: "Food Preservative Blends",
     badge: "Food Preservative Blends",
-    headline: "Extend Shelf Life Without Compromising Quality",
-    description: "Our food preservative blends are scientifically formulated to extend the shelf life of bakery and tortilla products while maintaining taste, texture, and nutritional integrity.",
+    headline: "Leading Manufacturer of Food Preservative Blends",
+    description: "GC Ingredients is a leading manufacturer of food preservative blends in liquid and dry form. We make anti-microbials for tortillas, cakes, breads, and meats based on the required shelf life and manufacturing processes.",
     benefits: [
-      "Extended shelf life up to 30+ days",
-      "Maintains freshness and texture",
-      "Clean label compatible options",
-      "Custom concentration levels available",
+      "GC Max — Liquid blend for corn flour tortillas",
+      "GC Strong — Liquid blend for corn flour tortillas",
+      "GC Protect — Liquid blend for corn flour tortillas",
+      "GC Concentrate — Liquid blend for corn flour tortillas",
+      "GC Microstat-A & GC Microstat-B — Liquid blends for meat & poultry",
+      "GCI Kake & GCI Glaze — Liquid blends for cakes",
+      "Liquid Citrates, Sorbates, Benzoates & Phosphates",
     ],
-    applications: ["Bread", "Tortillas", "Rolls", "Flatbreads", "Wraps"],
+    applications: ["Bread", "Corn Flour Tortillas", "Cakes", "Meats", "Wraps"],
   },
   {
     id: "tortilla-batch-packs",
     label: "Tortilla Batch Packs",
     badge: "Tortilla Batch Packs",
     headline: "Complete Tortilla Systems in One Pack",
-    description: "Pre-measured, ready-to-use tortilla batch packs that simplify your production process, ensure consistency, and reduce preparation time on the manufacturing floor.",
+    description: "Tortilla is a thin round of unleavened cornmeal or wheat flour bread usually eaten hot with a topping or filling. We at GC Ingredients blend all the essential, functional ingredients into one mix, streamlining the process for customers.",
     benefits: [
-      "Pre-measured for production consistency",
-      "Reduces prep time and labor",
-      "Available for flour and corn tortillas",
-      "Custom batch sizes available",
+      "Burrito / Food Service / California Style",
+      "Gordita / Casera",
+      "Homestyle",
+      "Keto Friendly / Low Carb Tortilla",
+      "Flavored Tortillas",
+      "Clean Label Tortilla Batch Packs",
     ],
     applications: ["Flour Tortillas", "Corn Tortillas", "Wraps", "Flatbreads"],
   },
@@ -48,12 +53,14 @@ const tabs: Tab[] = [
     label: "Leavening Agents",
     badge: "Leavening Agents",
     headline: "Precise Leavening for Perfect Rise Every Time",
-    description: "Our custom leavening agent systems are engineered to deliver consistent rise, texture, and crumb structure across all bakery and tortilla applications.",
+    description: "We provide a variety of leavening agents to suit your application needs. Leavening acids are typically used in conjunction with an alkaline source such as baking soda to take the place of yeast in baked goods. Acid/base leavening systems produce carbon dioxide in the presence of heat and water.",
     benefits: [
-      "Consistent rise and texture",
-      "Optimized for high-speed production",
-      "Custom reaction rates available",
-      "Single and double-acting systems",
+      "Sodium Bicarbonate",
+      "Sodium Aluminum Phosphate (SALP)",
+      "Sodium Acid Pyrophosphate (SAPP)",
+      "Monocalcium Phosphate (MCP)",
+      "Sodium Aluminum Sulfate (SAS)",
+      "Single and Double Acting Baking Powder",
     ],
     applications: ["Bread", "Rolls", "Muffins", "Tortillas", "Biscuits", "Cakes"],
   },
@@ -62,12 +69,13 @@ const tabs: Tab[] = [
     label: "Gums & Stabilizers",
     badge: "Gums & Stabilizers",
     headline: "Superior Texture and Stability Control",
-    description: "Our gum and stabilizer systems improve texture, moisture retention, and product stability — delivering consistent results across every production run.",
+    description: "GCI offers various gums. Based on the application — whether it is bakery, dairy or any other application — we are able to offer the best combination of gum or gum blends to you. Please feel free to reach out to discuss your needs.",
     benefits: [
-      "Improved texture and mouthfeel",
-      "Enhanced moisture retention",
-      "Reduced syneresis and separation",
-      "Compatible with clean label requirements",
+      "Guar Gum",
+      "Xanthan Gum",
+      "CMC Gum (Sodium Carboxymethylcellulose)",
+      "LBG Gum (Locust Bean Gum)",
+      "Custom Stabilizer Blends",
     ],
     applications: ["Tortillas", "Bread", "Sauces", "Dairy", "Dressings"],
   },
@@ -75,13 +83,13 @@ const tabs: Tab[] = [
     id: "starches",
     label: "Starches",
     badge: "Starches",
-    headline: "Functional Starches for Every Application",
-    description: "Our starch portfolio covers native and modified starches optimized for bakery and tortilla manufacturing — delivering the thickening, binding, and texturizing performance your products demand.",
+    headline: "Native & Modified Starches from Corn, Tapioca and Potato",
+    description: "We offer native and modified starches from corn, tapioca, and potato. We know starches are very complex, so we're here for you. We can recommend the right starch for your specific needs — based on processing conditions such as time, temperature, pH, moisture, and more.",
     benefits: [
-      "Native and modified starch options",
-      "Superior binding and thickening",
-      "Freeze-thaw stability",
-      "Custom granulation available",
+      "Native and Modified Corn & Waxy Maize Starches",
+      "Native and Modified Tapioca Starches",
+      "Native and Modified Potato Starches",
+      "Resistant Starches",
     ],
     applications: ["Tortillas", "Breads", "Batters", "Coatings", "Sauces"],
   },
@@ -89,13 +97,13 @@ const tabs: Tab[] = [
     id: "wheat-protein",
     label: "Wheat Protein",
     badge: "Wheat Protein",
-    headline: "Strengthen Structure and Improve Performance",
-    description: "Our wheat protein ingredients enhance dough strength, elasticity, and water absorption — improving the performance and consistency of your bakery and tortilla products.",
+    headline: "Strengthen Dough Structure and Improve Performance",
+    description: "Wheat Proteins consist of gliadin and glutenin — the two insoluble protein groups. They create a well-balanced elastic and extensible texture to achieve high level of dough strength, which is very crucial for tortilla, bread and noodle making. Our wheat protein products create texture and effects that are highly desirable for baked goods.",
     benefits: [
+      "Vital Wheat Gluten",
+      "Wheat Protein Isolate",
       "Improved dough strength and elasticity",
-      "Enhanced water absorption",
-      "Better machinability on production lines",
-      "Available in vital and hydrolyzed forms",
+      "Enhanced water absorption for machinability",
     ],
     applications: ["Bread", "Tortillas", "Pasta", "Noodles", "Meat Analogs"],
   },
@@ -103,6 +111,57 @@ const tabs: Tab[] = [
 
 export default function ProductCategoryTabs() {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
+  const lastHashRef = useRef("");
+
+  useEffect(() => {
+    // ── Step 1: Initial load — read hash once ──
+    const initialHash = window.location.hash;
+    lastHashRef.current = initialHash;
+    const cleanInitial = initialHash.replace("#", "");
+    
+    if (cleanInitial && tabs.some(t => t.id === cleanInitial)) {
+      setActiveTab(cleanInitial);
+      // Wait a bit for page to render then scroll
+      setTimeout(() => {
+        const el = document.getElementById("products");
+        if (el) {
+          const y = el.getBoundingClientRect().top + window.pageYOffset - 90;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }, 350);
+    }
+
+    // ── Step 2: Next.js hashchange polling (since Next.js Link intercepts hashchange) ──
+    const interval = setInterval(() => {
+      const currentHash = window.location.hash;
+      
+      // If the URL hash changed, switch tabs and scroll to section exactly ONCE
+      if (currentHash !== lastHashRef.current) {
+        lastHashRef.current = currentHash;
+        const cleanHash = currentHash.replace("#", "");
+        
+        if (cleanHash && tabs.some(t => t.id === cleanHash)) {
+          setActiveTab(cleanHash);
+          
+          const el = document.getElementById("products");
+          if (el) {
+            const y = el.getBoundingClientRect().top + window.pageYOffset - 90;
+            window.scrollTo({ top: y, behavior: "smooth" });
+          }
+        }
+      }
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleTabClick = (tabId: string) => {
+    setActiveTab(tabId);
+    // Update URL hash without scrolling so navbar links can be clicked again
+    window.history.replaceState(null, "", `#${tabId}`);
+    lastHashRef.current = `#${tabId}`;
+  };
+
   const activeData = tabs.find((t) => t.id === activeTab)!;
 
   return (
@@ -124,7 +183,7 @@ export default function ProductCategoryTabs() {
           <select
             className="w-full border border-gray-200 rounded-xl px-4 py-3 text-[#111827] font-medium bg-white focus:outline-none focus:ring-2 focus:ring-[#1a5c38]"
             value={activeTab}
-            onChange={(e) => setActiveTab(e.target.value)}
+            onChange={(e) => handleTabClick(e.target.value)}
           >
             {tabs.map((t) => (
               <option key={t.id} value={t.id}>{t.label}</option>
@@ -137,7 +196,7 @@ export default function ProductCategoryTabs() {
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
+              onClick={() => handleTabClick(tab.id)}
               className={`relative px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 ${
                 activeTab === tab.id
                   ? "bg-[#1a5c38] text-white shadow-md"
@@ -203,7 +262,7 @@ export default function ProductCategoryTabs() {
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3]" style={{ boxShadow: "0 4px 32px rgba(0,0,0,0.1)" }}>
                 <Image
                   src="/images/bakery_hero.png"
-                  alt={`GC Ingredients ${activeData.badge}`}
+                  alt={`GC Ingredients ${activeData.badge}`} title={`GC Ingredients ${activeData.badge}`}
                   fill
                   className="object-cover"
                 />

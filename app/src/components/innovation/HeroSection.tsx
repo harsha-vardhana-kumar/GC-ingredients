@@ -88,7 +88,7 @@ export default function InnovationHeroSection() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
           >
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3]" style={{ boxShadow: "0 0 0 3px rgba(26,92,56,0.3), 0 24px 64px rgba(0,0,0,0.25)" }}>
-              <Image src="/images/hero-meat.png" alt="GC Ingredients R&D laboratory and food science innovation" fill className="object-cover" priority />
+              <Image src="/images/hero-meat.png" alt="GC Ingredients R&D laboratory and food science innovation" title="GC Ingredients R&D laboratory and food science innovation" fill className="object-cover" priority />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#0d3a22]/40 via-transparent to-transparent" />
             </div>
             {/* Floating card */}

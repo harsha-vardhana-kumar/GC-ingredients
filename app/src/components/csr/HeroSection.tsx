@@ -63,17 +63,15 @@ export default function CSRHeroSection() {
           className="text-4xl sm:text-5xl lg:text-6xl font-bold font-[family-name:var(--font-plus-jakarta)] text-white leading-[1.1] mb-6 max-w-4xl mx-auto"
           variants={fadeUp(0.1)} initial="hidden" animate="visible"
         >
-          Doing Good While{" "}
-          <span className="text-[#e8650a]">Doing Business</span>
+          A Commitment to a{" "}
+          <span className="text-[#e8650a]">Better Tomorrow</span>
         </motion.h1>
 
         <motion.p
           className="text-lg text-green-200 leading-relaxed max-w-2xl mx-auto mb-10"
           variants={fadeUp(0.2)} initial="hidden" animate="visible"
         >
-          At GC Ingredients, we believe that building a better food industry means taking
-          responsibility — for our environment, our communities, and the people behind every
-          product we make.
+          At GC Ingredients, our responsibility goes beyond creating high-quality food solutions. We believe in building a sustainable and equitable future. Our Corporate Social Responsibility (CSR) initiatives are deeply rooted in giving back to the community, protecting the environment, and empowering individuals.
         </motion.p>
 
         <motion.div

@@ -1,4 +1,6 @@
 import { ArrowRight, Star } from "lucide-react";
+import Image from "next/image";
+
 
 const products = [
   {
@@ -68,10 +70,11 @@ export default function FeaturedProductsSection() {
             >
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
-                <img
+                <Image
                   src={product.image}
-                  alt={product.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  alt={product.name} title={product.name}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 <div className="absolute top-3 left-3">
@@ -108,7 +111,7 @@ export default function FeaturedProductsSection() {
                 </div>
 
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="flex items-center gap-1 text-sm font-semibold text-[#1a5c38] hover:gap-2 transition-all"
                 >
                   Request Sample <ArrowRight className="w-3.5 h-3.5" />

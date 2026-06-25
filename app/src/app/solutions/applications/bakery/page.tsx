@@ -50,9 +50,9 @@ export default function BakeryPage() {
         />
 
         <AppOverview
-          h2="From Artisan Breads to High-Volume Commercial Bakeries"
-          para1="GC Ingredients has been developing ingredient systems for bakery manufacturers for over 25 years. Our deep application knowledge covers everything from artisan sourdough formulations to high-speed commercial bread production lines."
-          para2="Whether you need extended shelf life, cleaner labels, improved texture, or consistent rise — our food scientists build custom solutions around your exact bakery application."
+          h2="From Artisan Breads and Pita to High-Volume Commercial Bakeries"
+          para1="If you can bake it, we can help you improve it — from bread, buns and tortillas to cereals and bars. Our baking experts work closely with industrial bakers, bakery manufacturers and millers around the world to create products with great taste and texture — and that are healthier for both people and planet."
+          para2="GC Ingredients has the right food ingredients for pita breads, whether it is die-cut or pressed pita breads. Our range of food ingredients includes dough conditioner, emulsifier, gum blends, baking powder, and yeast."
           highlights={[
             "Extended shelf life solutions",
             "Clean label options",
@@ -70,26 +70,26 @@ export default function BakeryPage() {
             {
               Icon: "ShieldCheck",
               name: "Food Preservative Blends",
-              description: "Extend shelf life up to 30+ days while maintaining freshness and quality.",
-              applications: ["Bread", "Rolls", "Pastries", "Wraps"],
+              description: "Extend shelf life while maintaining freshness. Sorbic Acid, Potassium Sorbate, and custom anti-microbial blends for cakes, breads, and baked goods.",
+              applications: ["Bread", "Rolls", "Cakes", "Pastries"],
             },
             {
               Icon: "Wind",
               name: "Leavening Agents",
-              description: "Consistent rise and texture across every production run.",
-              applications: ["Bread", "Muffins", "Cakes", "Biscuits"],
+              description: "Double Acting Baking Powder, Sodium Bicarbonate, SALP, SAPP, MCP — consistent rise and texture across every production run.",
+              applications: ["Bread", "Muffins", "Pita", "Biscuits"],
             },
             {
               Icon: "Droplets",
-              name: "Gums & Stabilizers",
-              description: "Moisture retention and texture improvement for bakery products.",
-              applications: ["Bread", "Tortillas", "Pastries"],
+              name: "Gums, Stabilizers & Dough Conditioners",
+              description: "Ellobind 7010, Ellobind 4000, 6000 & 7000, Guar Gum, Xanthan Gum — moisture retention and texture improvement. Anti-Staling Enzyme Blends and Emulsifier Blends for pita breads.",
+              applications: ["Bread", "Pita", "Tortillas", "Pastries"],
             },
             {
               Icon: "Layers",
-              name: "Starches",
-              description: "Binding and thickening for bakery batters and fillings.",
-              applications: ["Batters", "Coatings", "Fillings"],
+              name: "Starches & Wheat Proteins",
+              description: "Corn Starches, Potato Starches, Tapioca Starches, Vital Wheat Gluten, Wheat Protein Isolate — binding, thickening, and dough strength for all bakery applications.",
+              applications: ["Bread", "Pita", "Batters", "Coatings"],
             },
           ]}
         />

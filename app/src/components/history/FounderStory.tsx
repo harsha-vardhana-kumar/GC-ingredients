@@ -22,7 +22,7 @@ export default function FounderStory() {
             >
               <Image
                 src="/images/hero-bakery.png"
-                alt="Srikanth Gundavarapu, Founder of GC Ingredients"
+                alt="Srikanth, MS, MBA, Founder of GC Ingredients" title="Srikanth, MS, MBA, Founder of GC Ingredients"
                 fill
                 className="object-cover"
               />
@@ -32,7 +32,7 @@ export default function FounderStory() {
 
             {/* Founded badge */}
             <div className="absolute bottom-5 left-5 bg-[#e8650a] text-white text-sm font-bold px-4 py-2 rounded-xl shadow-lg">
-              Founded 1998
+              Founded 2004
             </div>
 
             {/* Decorative accents */}
@@ -75,7 +75,7 @@ export default function FounderStory() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              In 1998, Srikanth Gundavarapu — armed with years of hands-on R&amp;D
+              In 2004, Srikanth — armed with years of hands-on R&amp;D
               experience in the food ingredient industry — took a bold step. He founded GC
               Ingredients with a single mission: to bring purposefully-made, scientifically
               advanced ingredient solutions to food manufacturers.
@@ -104,7 +104,7 @@ export default function FounderStory() {
               &ldquo;Every formulation we create is backed by science and built around our
               customer&apos;s success.&rdquo;
               <footer className="mt-2 text-sm not-italic text-[#6b7280] font-medium">
-                — Srikanth Gundavarapu, Founder &amp; CEO
+                — Srikanth, MS, MBA, Founder
               </footer>
             </motion.blockquote>
 

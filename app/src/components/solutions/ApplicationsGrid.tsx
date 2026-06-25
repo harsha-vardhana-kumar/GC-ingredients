@@ -4,12 +4,12 @@ import { ArrowRight } from "lucide-react";
 
 // Using emoji-as-icon approach since some Lucide icons (Croissant, Beef, Cookie) may not be available
 const apps = [
-  { emoji: "🥐", color: "#1a5c38", bg: "rgba(26,92,56,0.08)", industry: "Bakery", desc: "Bread, rolls, pastries, muffins, cookies", href: "/applications/bakery" },
-  { emoji: "🫓", color: "#e8650a", bg: "rgba(232,101,10,0.08)", industry: "Tortilla", desc: "Flour and corn tortillas, wraps, flatbreads", href: "/applications/tortilla" },
-  { emoji: "🥛", color: "#1a5c38", bg: "rgba(26,92,56,0.08)", industry: "Dairy", desc: "Cheese, yogurt, dairy beverages, ice cream", href: "/applications/dairy" },
-  { emoji: "🥩", color: "#e8650a", bg: "rgba(232,101,10,0.08)", industry: "Meat & Poultry", desc: "Processed meats, marinades, cured products", href: "/applications/meat-poultry" },
-  { emoji: "🍿", color: "#1a5c38", bg: "rgba(26,92,56,0.08)", industry: "Snack Foods", desc: "Chips, crackers, extruded snacks, popcorn", href: "/applications/snack-foods" },
-  { emoji: "🍱", color: "#e8650a", bg: "rgba(232,101,10,0.08)", industry: "Prepared Foods", desc: "Ready meals, frozen foods, meal kits", href: "/applications/prepared-foods" },
+  { emoji: "🥐", color: "#1a5c38", bg: "rgba(26,92,56,0.08)", industry: "Bakery", desc: "Bread, rolls, pastries, muffins, cookies", href: "/solutions/applications/bakery" },
+  { emoji: "🫓", color: "#e8650a", bg: "rgba(232,101,10,0.08)", industry: "Tortilla", desc: "Flour and corn tortillas, wraps, flatbreads", href: "/solutions/applications/tortilla" },
+  { emoji: "🥛", color: "#1a5c38", bg: "rgba(26,92,56,0.08)", industry: "Dairy", desc: "Cheese, yogurt, dairy beverages, ice cream", href: "/solutions/applications/dairy" },
+  { emoji: "🥩", color: "#e8650a", bg: "rgba(232,101,10,0.08)", industry: "Meat & Poultry", desc: "Processed meats, marinades, cured products", href: "/solutions/applications/meat-poultry" },
+  { emoji: "🍿", color: "#1a5c38", bg: "rgba(26,92,56,0.08)", industry: "Snack Foods", desc: "Chips, crackers, extruded snacks, popcorn", href: "/solutions/applications/snack-foods" },
+  { emoji: "🍱", color: "#e8650a", bg: "rgba(232,101,10,0.08)", industry: "Prepared Foods", desc: "Ready meals, frozen foods, meal kits", href: "/solutions/applications/prepared-foods" },
 ];
 
 export default function ApplicationsGrid() {
